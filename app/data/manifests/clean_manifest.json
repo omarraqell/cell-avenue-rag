@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-02-27T15:54:41.949553+00:00",
+  "cleaning_version": "v1.1",
+  "files": [
+    {
+      "source": "app\\data\\raw\\pages_ar.jsonl",
+      "output": "app\\data\\cleaned\\pages_ar.jsonl",
+      "read_records": 70,
+      "written_records": 70,
+      "raw_chars": 679775,
+      "clean_chars": 155507
+    },
+    {
+      "source": "app\\data\\raw\\pages_en.jsonl",
+      "output": "app\\data\\cleaned\\pages_en.jsonl",
+      "read_records": 40,
+      "written_records": 39,
+      "raw_chars": 364392,
+      "clean_chars": 116345
+    },
+    {
+      "source": "app\\data\\raw\\products_ar.jsonl",
+      "output": "app\\data\\cleaned\\products_ar.jsonl",
+      "read_records": 34,
+      "written_records": 34,
+      "raw_chars": 504567,
+      "clean_chars": 180326
+    },
+    {
+      "source": "app\\data\\raw\\products_en.jsonl",
+      "output": "app\\data\\cleaned\\products_en.jsonl",
+      "read_records": 72,
+      "written_records": 72,
+      "raw_chars": 919410,
+      "clean_chars": 289414
+    }
+  ],
+  "totals": {
+    "read_records": 216,
+    "written_records": 215,
+    "raw_chars": 2468144,
+    "clean_chars": 741592
+  }
+}

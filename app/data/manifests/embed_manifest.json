@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-02-27T16:49:02.863541+00:00",
+  "embed_version": "v1.0",
+  "embedding_model": "text-embedding-3-small",
+  "total_chunks_indexed": 373,
+  "languages": {
+    "ar": 157,
+    "en": 216
+  },
+  "page_types": {
+    "other": 2,
+    "brand_campaign": 14,
+    "category": 77,
+    "product": 263,
+    "policy_support": 17
+  },
+  "index_path": "app\\vectorstore\\faiss_index",
+  "source_chunks": "app\\data\\chunks\\semantic_chunks.jsonl",
+  "elapsed_seconds": 12.0
+}

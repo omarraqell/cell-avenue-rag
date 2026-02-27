@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-02-27T16:43:56.214849+00:00",
+  "chunking_version": "v1.0-semantic",
+  "files": [
+    {
+      "source": "app\\data\\cleaned\\pages_ar.jsonl",
+      "records": 70,
+      "chunks": 72
+    },
+    {
+      "source": "app\\data\\cleaned\\pages_en.jsonl",
+      "records": 39,
+      "chunks": 62
+    },
+    {
+      "source": "app\\data\\cleaned\\products_ar.jsonl",
+      "records": 34,
+      "chunks": 85
+    },
+    {
+      "source": "app\\data\\cleaned\\products_en.jsonl",
+      "records": 72,
+      "chunks": 154
+    }
+  ],
+  "totals": {
+    "records": 215,
+    "chunks": 373,
+    "avg_chunk_chars": 1987.3,
+    "min_chunk_chars": 78,
+    "max_chunk_chars": 9245,
+    "elapsed_seconds": 89.9
+  }
+}

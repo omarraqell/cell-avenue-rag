@@ -1,0 +1,27 @@
+{
+    "generated_at":  "2026-02-27T15:49:04.3025804Z",
+    "loaded_files":  [
+                         {
+                             "records":  72,
+                             "path":  "app/data/raw/products_en.jsonl",
+                             "name":  "products_en.jsonl"
+                         },
+                         {
+                             "records":  34,
+                             "path":  "app/data/raw/products_ar.jsonl",
+                             "name":  "products_ar.jsonl"
+                         },
+                         {
+                             "records":  40,
+                             "path":  "app/data/raw/pages_en.jsonl",
+                             "name":  "pages_en.jsonl"
+                         }
+                     ],
+    "missing_scopes":  [
+                           {
+                               "name":  "pages_ar",
+                               "reason":  "Firecrawl credits exhausted (HTTP 402)",
+                               "action":  "Top up credits and rerun: python scripts/load_raw_from_firecrawl.py --scopes pages_ar"
+                           }
+                       ]
+}

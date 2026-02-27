@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-02-27T15:41:37.863483+00:00",
+  "scopes": [
+    {
+      "name": "products_en",
+      "crawl_id": "019c9fc3-3ed5-769c-8981-31533d9c31b1",
+      "status": "completed",
+      "completed": 72,
+      "total": 72,
+      "saved_rows": 72,
+      "output_file": "app\\data\\raw\\products_en.jsonl"
+    },
+    {
+      "name": "products_ar",
+      "crawl_id": "019c9fc4-68c2-75cc-8f0e-40ed3d2ffe0f",
+      "status": "completed",
+      "completed": 34,
+      "total": 34,
+      "saved_rows": 34,
+      "output_file": "app\\data\\raw\\products_ar.jsonl"
+    },
+    {
+      "name": "pages_en",
+      "crawl_id": "019c9fc6-485a-77b8-830e-f545c29636ba",
+      "status": "completed",
+      "completed": 69,
+      "total": 69,
+      "saved_rows": 69,
+      "output_file": "app\\data\\raw\\pages_en.jsonl"
+    },
+    {
+      "name": "pages_ar",
+      "crawl_id": "019c9fc8-8afb-700e-aa3d-15e9b9e76cee",
+      "status": "completed",
+      "completed": 70,
+      "total": 70,
+      "saved_rows": 70,
+      "output_file": "app\\data\\raw\\pages_ar.jsonl"
+    }
+  ]
+}
