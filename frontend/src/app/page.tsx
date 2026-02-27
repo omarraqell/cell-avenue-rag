@@ -21,7 +21,8 @@ interface SessionInfo {
   messages: Message[];
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+// Calls go through Next.js API route proxy (/api/chat)
+// which forwards to the FastAPI backend server-side
 
 const WELCOME_SUGGESTIONS = [
   "What phones do you have?",
@@ -98,7 +99,7 @@ export default function ChatPage() {
     abortControllerRef.current = controller;
 
     try {
-      const response = await fetch(`${API_BASE}/chat/stream`, {
+      const response = await fetch(`/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -1,22 +1,23 @@
-export async function POST(req: Request) {
-    const { messages, data } = await req.json();
+const BACKEND_URL = process.env.API_URL || "http://127.0.0.1:8000";
 
-    // Get the last user message
-    const lastMessage = messages[messages.length - 1];
-    const sessionId = data?.sessionId || null;
+export async function POST(req: Request) {
+    const { question, session_id } = await req.json();
 
     // Forward to FastAPI streaming endpoint
-    const response = await fetch("http://127.0.0.1:8000/chat/stream", {
+    const response = await fetch(`${BACKEND_URL}/chat/stream`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-            question: lastMessage.content,
-            session_id: sessionId,
+            question,
+            session_id: session_id || null,
         }),
     });
 
     if (!response.ok) {
-        return new Response("Backend error", { status: response.status });
+        return new Response(
+            JSON.stringify({ error: "Backend error" }),
+            { status: response.status, headers: { "Content-Type": "application/json" } }
+        );
     }
 
     // Forward the stream directly to the client
